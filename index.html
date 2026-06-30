@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cheeserat — unblocked html5 games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">🐀</span>
+      <span class="brand-text">cheese<span class="accent-y">r</span><span class="accent-p">at</span></span>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="nav-link active" data-filter="all">
+        <span class="dot dot-y"></span> Home
+      </a>
+      <a href="#" class="nav-link" data-filter="action">
+        <span class="dot dot-p"></span> Action
+      </a>
+      <a href="#" class="nav-link" data-filter="puzzle">
+        <span class="dot dot-y"></span> Puzzle
+      </a>
+      <a href="#" class="nav-link" data-filter="arcade">
+        <span class="dot dot-p"></span> Arcade
+      </a>
+      <a href="#" class="nav-link" data-filter="platformer">
+        <span class="dot dot-y"></span> Platformer
+      </a>
+      <a href="#" class="nav-link" data-filter="favorites">
+        <span class="dot dot-p"></span> Favorites
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <p>hosted on github pages</p>
+      <p class="muted">games link out to itch.io</p>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <header class="topbar">
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="search games...">
+      </div>
+      <a class="cta" href="https://itch.io/games/free/html5" target="_blank" rel="noopener">
+        browse all on itch.io →
+      </a>
+    </header>
+
+    <section class="hero">
+      <h1>play anywhere.<br><span class="accent-y">no</span> <span class="accent-p">downloads</span>.</h1>
+      <p>a hand-picked stash of free, browser-playable html5 games from itch.io. click a card, it opens the real game page in a new tab — nothing's blocked, nothing's installed.</p>
+    </section>
+
+    <section class="grid" id="game-grid">
+      <!-- cards injected by script.js -->
+    </section>
+
+    <p class="disclaimer">
+      ⚠️ game links point to their official itch.io pages. swap the entries in <code>script.js</code>
+      to curate your own list — double check each link still resolves before you deploy, since
+      creators occasionally take pages down or change their embed settings.
+    </p>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
